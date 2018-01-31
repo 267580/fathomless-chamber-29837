@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formularz POST</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <style type="text/css">
+      body{
+        background-image: url(img/city.jpg);
+        background-size: cover;
+        color: white;
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-attachment: fixed;
+      }
+
+      form{
+        background: rgba(45, 45, 125, 0.58);
+        color: white;
+        padding: 40px;
+        margin-top: 200px;
+        padding-bottom: 60px;
+        box-shadow: 10px 10px 5px rgba(6, 1, 1, 0.43)
+      }
+
+      h1{
+        text-align: center;
+      }
+
+      .btn{
+        width: 100%;
+        border-radius: 0px;
+      }
+
+      .form-control{
+        border-radius: 5px;
+        background-color: rgba(23, 3, 3, 0.48);
+        color: white;
+        border-radius:1px solid #291212
+      }
+
+    </style>
+
+  
+  </head>
+  <body>
+    
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-offset-2 col-sm-8">
+            <form action="/records/" method="post">
+            <h1>Formularz</h1>
+<div class="form-group col-sm-6 col-lg-6" style="margin-top: 10px;"><input type="identyfikatorPRNG" class="form-control input-sm" id="identyfikatorPRNG" placeholder="Enter identyfikatorPRNG" name="identyfikatorPRNG"></div>
+<div class="form-group col-sm-6 col-lg-6" style="margin-top: 10px;"><input type="nazwaGłówna" class="form-control input-sm" id="nazwaGłówna" placeholder="Enter nazwaGłówna" name="nazwaGłówna"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="rodzajObiektu" class="form-control input-sm" id="rodzajObiektu" placeholder="Enter rodzajObiektu" name="rodzajObiektu"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="klasaObiektu" class="form-control input-sm" id="klasaObiektu" placeholder="Enter klasaObiektu" name="klasaObiektu"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="obiektNadrzędny" class="form-control input-sm" id="obiektNadrzędny" placeholder="Enter obiektNadrzędny" name="obiektNadrzędny"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="funkcjaAdministracyjna" class="form-control input-sm" id="funkcjaAdministracyjna" placeholder="Enter funkcjaAdministracyjna" name="funkcjaAdministracyjna"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="dopełniacz" class="form-control input-sm" id="dopełniacz" placeholder="Enter dopełniacz" name="dopełniacz"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="przymiotnik" class="form-control input-sm" id="przymiotnik" placeholder="Enter przymiotnik" name="przymiotnik"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="uwagi" class="form-control input-sm" id="uwagi" placeholder="Enter uwagi" name="uwagi"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="źródłoInformacji" class="form-control input-sm" id="źródłoInformacji" placeholder="Enter źródłoInformacji" name="źródłoInformacji"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="elementRozróżniający" class="form-control input-sm" id="elementRozróżniający" placeholder="Enter elementRozróżniający" name="elementRozróżniający"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="elementRodzajowy" class="form-control input-sm" id="elementRodzajowy" placeholder="Enter elementRodzajowy" name="elementRodzajowy"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="wymowaIPA" class="form-control input-sm" id="wymowaIPA" placeholder="Enter wymowaIPA" name="wymowaIPA"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="wymowaPolska" class="form-control input-sm" id="wymowaPolska" placeholder="Enter wymowaPolska" name="wymowaPolska"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="szerokośćGeograficzna" class="form-control input-sm" id="szerokośćGeograficzna" placeholder="Enter szerokośćGeograficzna" name="szerokośćGeograficzna"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="długośćGeograficzna" class="form-control input-sm" id="długośćGeograficzna" placeholder="Enter długośćGeograficzna" name="długośćGeograficzna"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="współrzędneProstokątneY" class="form-control input-sm" id="współrzędneProstokątneY" placeholder="Enter współrzędneProstokątneY" name="współrzędneProstokątneY"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="współrzędneProstokątneX" class="form-control input-sm" id="współrzędneProstokątneX" placeholder="Enter współrzędneProstokątneX" name="współrzędneProstokątneX"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="dataModyfikacji" class="form-control input-sm" id="dataModyfikacji" placeholder="Enter dataModyfikacji" name="dataModyfikacji"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="rodzajReprezentacji" class="form-control input-sm" id="rodzajReprezentacji" placeholder="Enter rodzajReprezentacji" name="rodzajReprezentacji"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="systemZewnętrzny" class="form-control input-sm" id="systemZewnętrzny" placeholder="Enter systemZewnętrzny" name="systemZewnętrzny"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="identyfikatorZewnętrzny" class="form-control input-sm" id="identyfikatorZewnętrzny" placeholder="Enter identyfikatorZewnętrzny" name="identyfikatorZewnętrzny"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="identyfikatorIIP" class="form-control input-sm" id="identyfikatorIIP" placeholder="Enter identyfikatorIIP" name="identyfikatorIIP"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="skalaMapy" class="form-control input-sm" id="skalaMapy" placeholder="Enter skalaMapy" name="skalaMapy"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="statusNazwy" class="form-control input-sm" id="statusNazwy" placeholder="Enter statusNazwy" name="statusNazwy"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="nazwaDodatkowa" class="form-control input-sm" id="nazwaDodatkowa" placeholder="Enter nazwaDodatkowa" name="nazwaDodatkowa"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="kodJęzykaNazwyDodatkowej" class="form-control input-sm" id="kodJęzykaNazwyDodatkowej" placeholder="Enter kodJęzykaNazwyDodatkowej" name="kodJęzykaNazwyDodatkowej"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="językNazwyDodatkowej" class="form-control input-sm" id="językNazwyDodatkowej" placeholder="Enter językNazwyDodatkowej" name="językNazwyDodatkowej"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="latynizacjaNazwyDodatkowej" class="form-control input-sm" id="latynizacjaNazwyDodatkowej" placeholder="Enter latynizacjaNazwyDodatkowej" name="latynizacjaNazwyDodatkowej"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="nazwaHistoryczna" class="form-control input-sm" id="nazwaHistoryczna" placeholder="Enter nazwaHistoryczna" name="nazwaHistoryczna"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="nazwaOboczna" class="form-control input-sm" id="nazwaOboczna" placeholder="Enter nazwaOboczna" name="nazwaOboczna"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="uwagiNazwDodatkowych" class="form-control input-sm" id="uwagiNazwDodatkowych" placeholder="Enter uwagiNazwDodatkowych" name="uwagiNazwDodatkowych"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="uwagiNazwHistorycznych" class="form-control input-sm" id="uwagiNazwHistorycznych" placeholder="Enter uwagiNazwHistorycznych" name="uwagiNazwHistorycznych"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="uwagiNazwObocznych" class="form-control input-sm" id="uwagiNazwObocznych" placeholder="Enter uwagiNazwObocznych" name="uwagiNazwObocznych"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="obcyEgzonim" class="form-control input-sm" id="obcyEgzonim" placeholder="Enter obcyEgzonim" name="obcyEgzonim"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="pismoEgzonimu" class="form-control input-sm" id="pismoEgzonimu" placeholder="Enter pismoEgzonimu" name="pismoEgzonimu"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="językEgzonimu" class="form-control input-sm" id="językEgzonimu" placeholder="Enter językEgzonimu" name="językEgzonimu"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="latynizacjaEgzonimu" class="form-control input-sm" id="latynizacjaEgzonimu" placeholder="Enter latynizacjaEgzonimu" name="latynizacjaEgzonimu"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="zagranicznyEndonim" class="form-control input-sm" id="zagranicznyEndonim" placeholder="Enter zagranicznyEndonim" name="zagranicznyEndonim"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="pismoEndonimu" class="form-control input-sm" id="pismoEndonimu" placeholder="Enter pismoEndonimu" name="pismoEndonimu"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="językEndonimu" class="form-control input-sm" id="językEndonimu" placeholder="Enter językEndonimu" name="językEndonimu"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="latynizacjaEndonimu" class="form-control input-sm" id="latynizacjaEndonimu" placeholder="Enter latynizacjaEndonimu" name="latynizacjaEndonimu"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="państwo" class="form-control input-sm" id="państwo" placeholder="Enter państwo" name="państwo"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="województwo" class="form-control input-sm" id="województwo" placeholder="Enter województwo" name="województwo"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="powiat" class="form-control input-sm" id="powiat" placeholder="Enter powiat" name="powiat"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="gmina" class="form-control input-sm" id="gmina" placeholder="Enter gmina" name="gmina"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="identyfikatorJednostkiPodziałuTerytorialnegoKraju" class="form-control input-sm" id="identyfikatorJednostkiPodziałuTerytorialnegoKraju" placeholder="Enter identyfikatorJednostkiPodziałuTerytorialnegoKraju" name="identyfikatorJednostkiPodziałuTerytorialnegoKraju"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="dataWprowadzenia" class="form-control input-sm" id="dataWprowadzenia" placeholder="Enter dataWprowadzenia" name="dataWprowadzenia"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="dataZniesieniaLubUsunięcia" class="form-control input-sm" id="dataZniesieniaLubUsunięcia" placeholder="Enter dataZniesieniaLubUsunięcia" name="dataZniesieniaLubUsunięcia"></div>
+<div class="form-group col-sm-6 col-lg-6"><input type="przestrzeńNazw" class="form-control input-sm" id="przestrzeńNazw" placeholder="Enter przestrzeńNazw" name="przestrzeńNazw"></div>
+
+              <br>
+              
+              <button type="submit" class="btn btn-default">Submit</buttonn>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+  </body>
+</html>
